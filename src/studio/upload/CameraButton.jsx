@@ -59,15 +59,15 @@ const CameraButton = ({ onPhotoTaken }) => {
     <div className="flex flex-col items-center space-y-4">
       {isCameraVisible ? (
         <>
-          <video ref={videoRef} className="rounded-lg border mt-4" width="520" height="360" />
-          <button onClick={capturePhoto}>Fotoğraf Çek</button>
+          <video ref={videoRef} className="rounded-lg border mt-4" width="420" height="320" />
+          <button onClick={capturePhoto}>TAKE PICTURE</button>
         </>
       ) : (
         <>
           {photo && (
-            <img src={photo} alt="Çekilen Fotoğraf" className="rounded-lg border mt-4" width="520" height="360" />
+            <img src={photo} alt="TAKEN PHOTO" className="rounded-lg border mt-4" width="420" height="320" />
           )}
-          <button onClick={retakePhoto}>Yeniden Çek</button>
+          <button onClick={retakePhoto}>RETAKE</button>
         </>
       )}
       <canvas ref={canvasRef} style={{ display: "none" }}></canvas>

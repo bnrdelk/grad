@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
 const FileUpload = ({ onFileUpload }) => {
-  const [photo, setPhoto] = useState(null); // Yüklenen fotoğraf
+  const [photo, setPhoto] = useState(null); 
 
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
       const reader = new FileReader();
       reader.onload = (event) => {
-        setPhoto(event.target.result); // Yüklenen fotoğrafı state'e kaydet
+        setPhoto(event.target.result); 
         if (onFileUpload) {
-          onFileUpload(event.target.result); // Yüklenen fotoğrafı parent'a gönder
+          onFileUpload(event.target.result); 
         }
       };
       reader.readAsDataURL(file);
@@ -23,9 +23,9 @@ const FileUpload = ({ onFileUpload }) => {
         type="file"
         accept="image/*"
         onChange={handleFileUpload}
-        className="mt-4"
+        className="my-6 text-cyan-900"
       />
-      {photo && <img src={photo} alt="Uploaded Preview" className="mt-4" width="520" height="360" />}
+      {photo && <img src={photo} alt="Uploaded Preview" className="my-4" width="520" height="360" />}
     </div>
   );
 };

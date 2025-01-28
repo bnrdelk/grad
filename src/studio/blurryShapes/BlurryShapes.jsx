@@ -6,6 +6,7 @@ function BlurryShapes() {
             <div className="relative w-full max-w-lg">
                 <div style={{ animationDelay: '5s' }} className="absolute top-0 -left-4 w-82 h-82 bg-gray-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                 <div style={{ animationDelay: '2s' }} className="absolute top-0 left-25 w-82 h-82 bg-cyan-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob "></div>
+                <div style={{ animationDelay: '8s' }} className="absolute -bottom-30 w-62 h-62 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
                 <div className="absolute -bottom-40 -right-2 w-82 h-82 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
             </div>
         </div>
