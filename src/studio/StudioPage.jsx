@@ -1,5 +1,6 @@
 import BlurryShapes from "./blurryShapes/BlurryShapes";
 import Stepper from "./Stepper";
+import CameraButton from "./upload/CameraButton";
 
 const StudioPage = () => {
     return (

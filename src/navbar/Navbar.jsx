@@ -11,20 +11,20 @@ function Navbar() {
         <>
                 <header className="fixed z-50 w-full top-0 left-0 flex justify-between items-center text-gray-100
         py-4 px-8 md:px-32 bg-black drop-shadow-md">
-                    <a className="w-26 h-10 justify-center text-center" href="/">
-                        <img className="w-26 h-10 justify-center text-center" src={logo} alt="" />
+                    <a className="w-26 h-10 justify-center text-center" href="/grad/home">
+                        <img className="w-26 h-10 justify-center text-center" src={logo} alt="NailArt Logo" />
                     </a>
 
-                    <ul className=" navbar hidden xl:flex items-center
+                    <ul className="navbar hidden xl:flex items-center
                 text-base">
                         <li className="p-2 hover:bg-gray-400  transition-all cursor-pointer">
-                            <Link className="navbar-link" to="/home" onClick={() => setIsMenuOpen(false)}>
+                            <Link className="navbar-link" to="/grad/home" onClick={() => setIsMenuOpen(false)}>
                                 <i className="fa-regular fa-map px-2 text-xl"></i> HOME</Link></li>
                         <li className="p-2 hover:bg-gray-400 mx-2 transition-all cursor-pointer">
-                            <Link className="navbar-link" to="/feed" onClick={() => setIsMenuOpen(false)}>
+                            <Link className="navbar-link" to="/grad/feed" onClick={() => setIsMenuOpen(false)}>
                                 <i className="fa-solid fa-globe px-2 text-xl"></i> FEED</Link></li>
                         <li className="p-2 hover:bg-gray-400 transition-all cursor-pointer">
-                            <Link className="navbar-link" to="/studio" onClick={() => setIsMenuOpen(false)}>
+                            <Link className="navbar-link" to="/grad/studio" onClick={() => setIsMenuOpen(false)}>
                                 <i className="fa-brands fa-files-pinwheel px-2 text-xl"></i> STUDIO</Link></li>
                         <hr className="w-0.25 h-10 border-0 bg-gray-500 ml-5 mr-2" />
                         <li style={{ fontSize: "15px" }} className="p-2">

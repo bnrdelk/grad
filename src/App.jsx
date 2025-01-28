@@ -11,7 +11,7 @@ function App() {
       <Navbar />
         <Routes>
           <Route path="/grad" element={<HomePage />} />
-          <Route path="/studio" element={<StudioPage />} />
+          <Route path="/grad/studio" element={<StudioPage />} />
         </Routes>
       </BrowserRouter>
     </>
