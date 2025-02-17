@@ -12,7 +12,7 @@ function Navbar() {
         py-4 px-8 md:px-32 bg-white">
 
                 <Link className="navbar-link w-26 h-10 justify-center text-center" to="/grad/" onClick={() => setIsMenuOpen(false)}>
-                    <img className="w-26 h-10 justify-center text-center" src="/grad/header.png" alt="NailArt Logo" />
+                    <img className="w-26 h-10 justify-center text-center" src="/grad/logo.png" alt="NailArt Logo" />
                 </Link>
 
                 <ul className="navbar hidden xl:flex items-center
