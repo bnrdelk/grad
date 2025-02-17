@@ -1,11 +1,13 @@
 
 function Header() {
     return (
-        <div className="justify-start my-8" style={{ fontSize: '22px' }}>
-            <img className="w-120" src="/grad/header.png" alt="" />
-            <p className="my-5">Lorem eum nemo ea distinctio deserunt fuga id nam numquam aperiam, labore rerum aut iste sapiente, quas, harum iusto! Rem, doloribus alias.
-                </p>
+        <div className="flex flex-col items-center text-center mt-4" style={{ fontSize: '16px' }}>
+            <div className="flex justify-center">
+                <img className="w-100" src="/grad/header.png" alt="Nailart with AI" />
+            </div>
+            <p className="my-2">Nailart with Artificial Intelligence.</p>
         </div>
+
     );
 };
 

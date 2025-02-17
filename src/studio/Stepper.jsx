@@ -39,9 +39,9 @@ const Stepper = () => {
             {/* Step circle */}
             <div
               className={`w-12 h-12 flex items-center justify-center z-1 relative rounded-full border-1 font-bold ${i + 1 < currentStep || complete
-                ? "bg-black text-white border-cyan-900"
-                : currentStep === i + 1
-                  ? "bg-cyan-900 text-white"
+                ? "bg-amber-100 text-sky-900"
+                : currentStep === i + 1 
+                ? "bg-sky-700 text-white border-gray-700"
                   : "bg-gray-50 text-black"
                 }`}
             >
@@ -65,13 +65,13 @@ const Stepper = () => {
       <div className="mt-6">
         <div style={{fontSize: '20px'}}>
           {currentStep === 1 && (
-            <TypeWriter loop={1} size={'bold'} words={['<TAKE PICTURE OF HANDS />']} />
+            <TypeWriter loop={1} size={'bold'} color={'white'} words={['<TAKE PICTURE OF HANDS />']} />
           )}
           {currentStep === 2 && (
-            <TypeWriter loop={1} size={'bold'} words={['<UPLOAD THE NAILART/>']} />
+            <TypeWriter loop={1} size={'bold'} color={'white'} words={['<UPLOAD THE NAILART/>']} />
           )}
           {currentStep === 3 && (
-            <TypeWriter loop={1} size={'bold'} words={['<CREATE THE LOOK />']} />
+            <TypeWriter loop={1} size={'bold'} color={'white'} words={['<CREATE THE LOOK />']} />
           )}
         </div>
         {steps[currentStep - 1](() => setIsNextVisible(true))}
@@ -79,9 +79,9 @@ const Stepper = () => {
 
       {!complete && isNextVisible && (
         <button
-          className={`cursor-pointer py-1 px-3 rounded-full transition duration-300 border-2 hover:bg-white hover:text-black border-white text-white ${currentStep === steps.length
-            ? " bg-gray-400 cursor-not-allowed"
-            : " bg-black"
+          className={`cursor-pointer py-1 px-3 rounded-lg transition duration-300 border-1 border-gray text-gray text-white hover:bg-black hover:text-gray-200 ${currentStep === steps.length
+            ? " bg-green-900 cursor-not-allowed"
+            : " bg-blue-950"
             }`}
           onClick={handleNext}
         >

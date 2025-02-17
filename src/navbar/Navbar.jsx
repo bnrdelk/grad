@@ -8,8 +8,8 @@ function Navbar() {
 
     return (
         <>
-            <header className="fixed z-50 w-full top-0 left-0 flex justify-between items-center text-gray-100
-        py-4 px-8 md:px-32 bg-black drop-shadow-md">
+            <header className="fixed z-50 w-full top-0 left-0 flex justify-between items-center text-gray-600
+        py-4 px-8 md:px-32 bg-white">
 
                 <Link className="navbar-link w-26 h-10 justify-center text-center" to="/grad/" onClick={() => setIsMenuOpen(false)}>
                     <img className="w-26 h-10 justify-center text-center" src="/grad/header.png" alt="NailArt Logo" />
@@ -38,7 +38,7 @@ function Navbar() {
                 </div>
 
                 <div className={` absolute xl:hidden top-20 left-0 w-full
-                    bg-black flex flex-col items-center gap-6 text-lg
+                    bg-white flex flex-col items-center gap-6 text-lg
                     transform transition-transform 
                     ${isMenuOpen
                         ? "opacity-100"

@@ -60,14 +60,14 @@ const CameraButton = ({ onPhotoTaken }) => {
       {isCameraVisible ? (
         <>
           <video ref={videoRef} className="rounded-lg border mt-4" width="420" height="320" />
-          <button onClick={capturePhoto}>TAKE PICTURE</button>
+          <button className="text-gray-300 italic cursor-pointer" onClick={capturePhoto}>TAKE PICTURE</button>
         </>
       ) : (
         <>
           {photo && (
             <img src={photo} alt="TAKEN PHOTO" className="rounded-lg border mt-4" width="420" height="320" />
           )}
-          <button onClick={retakePhoto}>RETAKE</button>
+          <button className="text-gray-300 italic cursor-pointer" onClick={retakePhoto}>RETAKE</button>
         </>
       )}
       <canvas ref={canvasRef} style={{ display: "none" }}></canvas>

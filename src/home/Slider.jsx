@@ -2,8 +2,8 @@ import { useState } from 'react'
 import './Slider.css'
 function Slider() {
     const sliderStyle = {
-        "--width": "200px",
-        "--height": "200px",
+        "--width": "150px",
+        "--height": "140px",
         "--quantity": 9,
     };
 
