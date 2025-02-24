@@ -9,7 +9,7 @@ function Navbar() {
     return (
         <>
             <header className="fixed z-50 w-full top-0 left-0 flex justify-between items-center text-gray-600
-        py-4 px-8 md:px-32 bg-white">
+        py-3 px-8 md:px-32 bg-white shadow-sm">
 
                 <Link className="navbar-link w-26 h-10 justify-center text-center" to="/grad/" onClick={() => setIsMenuOpen(false)}>
                     <img className="w-26 h-10 justify-center text-center" src="/grad/logo.png" alt="NailArt Logo" />

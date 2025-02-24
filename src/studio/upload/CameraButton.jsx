@@ -4,7 +4,7 @@ const CameraButton = ({ onPhotoTaken }) => {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [photo, setPhoto] = useState(null);
-  const [isCameraVisible, setIsCameraVisible] = useState(false); 
+  const [isCameraVisible, setIsCameraVisible] = useState(false);
 
   const openCamera = async () => {
     try {
@@ -28,7 +28,7 @@ const CameraButton = ({ onPhotoTaken }) => {
       context.drawImage(videoRef.current, 0, 0, canvas.width, canvas.height);
       const capturedPhoto = canvas.toDataURL("image/png");
       setPhoto(capturedPhoto);
-      setIsCameraVisible(false); 
+      setIsCameraVisible(false);
 
       // Video durdur
       const stream = videoRef.current.srcObject;
@@ -38,14 +38,14 @@ const CameraButton = ({ onPhotoTaken }) => {
       }
 
       if (onPhotoTaken) {
-        onPhotoTaken(capturedPhoto); 
+        onPhotoTaken(capturedPhoto);
       }
     }
   };
 
   const retakePhoto = () => {
-    setPhoto(null); 
-    setIsCameraVisible(true); 
+    setPhoto(null);
+    setIsCameraVisible(true);
     openCamera();
   };
 
