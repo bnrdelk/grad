@@ -25,15 +25,13 @@ const Login = () => {
 
     let errors = [];
 
-    if (!email || email.includes('@')) {
-      errors.push("Please provide your email");
-    }
-
     if (errors.length > 0) {
       setFormState({ errors, enteredValues: { email, password } });
     } else {
       setFormState({ errors: null, enteredValues: { email: "", password: "" } });
     }
+
+    
   };
 
   return (

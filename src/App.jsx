@@ -7,9 +7,6 @@ import FeedPage from './feed/FeedPage';
 import Footer from './footer/Footer';
 
 function AppContent() {
-  const location = useLocation();
-  const hideNavbarRoutes = ["/grad"]; // Navbar'ın gizlenmesi gereken sayfalar
-  const isNavbarVisible = !hideNavbarRoutes.includes(location.pathname);
 
   return (
     <>
