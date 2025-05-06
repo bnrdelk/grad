@@ -1,0 +1,13 @@
+.navbar-link {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.navbar-link:visited {
+    color: inherit; 
+}
+
+.navbar-link:hover {
+    color: inherit; 
+}
+
